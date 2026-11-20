@@ -67,12 +67,12 @@ app.get("/posts/:id",(req,res)=>{
     let {id}=req.params;
     console.log(id);
     let post=posts.find((p)=>id===p.id);
-    console.log(post);
+    // console.log(post);
 
     res.render("show.ejs",{post});
 
 
-    res.send("request working ")
+    // res.send("request working ")
 });
 
 
