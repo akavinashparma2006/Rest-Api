@@ -11,11 +11,16 @@
 
     <%for(post of posts){%>
         <div class="post">
-            <h3 class="user">@<%=posts.username%></h3>
+            <h3 class="user">@<%=post.username%></h3>
             <h4 class="content"><%=post.content%></h4>
         </div>
 
    <% }%>
+   <br>
+   <br>
+
+
+   <a href="http://localhost:8080/posts/new">Create new post</a>
 
 
 </body>
